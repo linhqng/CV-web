@@ -1,0 +1,111 @@
+.header {
+  position: sticky;
+  top: 7rem;
+  grid-column: 1/4;
+  background-color: #302c40;
+  border-radius: 20px;
+  height: min-content;
+  padding-bottom: 3rem;
+}
+.avatar {
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  filter: drop-shadow(0px 24px 24px rgba(32, 29, 42, 0.7));
+  height: 17.25rem;
+  width: 17.25rem;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  &__img {
+    width: 101%;
+  }
+}
+.name {
+  margin-top: 11rem;
+  text-align: center;
+  color: #f1f2f4;
+  &__main {
+    font-family: "Merriweather", serif;
+    font-size: 3rem;
+    margin-bottom: 1.6rem;
+    font-weight: 900;
+    line-height: 1.3;
+    & > span {
+      font-weight: 500;
+    }
+  }
+  &__job {
+    margin-top: 0;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: #272333;
+    border-radius: 10rem;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    & > li {
+      list-style: none;
+      & > a:link,
+      a:visited {
+        font-size: 1.8rem;
+        color: #f1f2f4;
+        outline: none;
+        transition: all 0.3s;
+        &:hover {
+          color: #0d86ff;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+.info {
+  margin-top: 2rem;
+  & > ul > li {
+    list-style: none;
+    color: #dedde0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    & > i {
+      font-size: 1.6rem;
+      margin-right: 1rem;
+    }
+  }
+}
+.btn-box {
+  text-align: center;
+  margin-top: 2.6rem;
+  .btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: inherit;
+    padding: 1.6rem 5rem;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    white-space: nowrap;
+    background-color: #0d86ff;
+    box-shadow: 0 0.5rem 1rem rgba(13, 134, 255, 0.15),
+      0 0.125rem 0.25rem rgba(13, 134, 255, 0.15);
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    & > i {
+      margin-right: 0.5rem;
+    }
+  }
+}
